@@ -1,0 +1,120 @@
+/* Archivo: css/estilos.css (guardar dentro de menu-cliente/css/) */
+:root {
+    --primary-color: #e65100;
+    --bg-color: #f4f4f9;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    max-width: 480px;
+    width: 100%;
+    background: white;
+    min-height: 100vh;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.categories {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 15px;
+    gap: 10px;
+}
+
+.categories::-webkit-scrollbar { display: none; }
+
+.cat-btn {
+    background: #eee;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: 600;
+    color: #555;
+    transition: 0.3s;
+}
+
+.cat-btn.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.menu-items {
+    padding: 0 15px 20px 15px;
+}
+
+.item-card {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.item-img {
+    width: 85px;
+    height: 85px;
+    border-radius: 12px;
+    background-color: #ffe0b2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    flex-shrink: 0;
+}
+
+.item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-title {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.item-desc {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.item-price {
+    margin: 0;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 16px;
+}
