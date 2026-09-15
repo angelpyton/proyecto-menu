@@ -1,0 +1,30 @@
+<!-- Archivo: index.html (guardar dentro de menu-cliente/) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Digital | Demo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>Cargando...</h1>
+            <p>Menú Digital • Escaneá y pedí</p>
+        </header>
+
+        <div class="categories" id="categories-container">
+            <button class="cat-btn active" onclick="filterMenu('todos', this)">Todos</button>
+            <button class="cat-btn" onclick="filterMenu('lomitos', this)">Lomitos</button>
+            <button class="cat-btn" onclick="filterMenu('hamburguesas', this)">Hamburguesas</button>
+            <button class="cat-btn" onclick="filterMenu('bebidas', this)">Bebidas</button>
+        </div>
+
+        <div class="menu-items" id="menu-container"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
